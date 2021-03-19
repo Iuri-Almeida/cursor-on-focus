@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+:root {
+  font-family: "Comfortaa", cursive;
+  font-size: 10px;
+
+  --body: #353531;
+  --me: #ff9505;
+  --resp: #ec4e20;
+  --text: #fff;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  background: var(--body);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span {
+  position: absolute;
+
+  background: var(--me);
+
+  color: var(--text);
+
+  padding: 1rem 2rem;
+
+  font-size: 3rem;
+
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+
+  z-index: 1;
+}
+
+span#resp {
+  transition: all 0.3s;
+
+  background: var(--resp);
+
+  z-index: 0;
+}
